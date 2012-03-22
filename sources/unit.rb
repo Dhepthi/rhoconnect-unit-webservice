@@ -39,12 +39,10 @@ class Unit < SourceAdapter
           "toLengthUnit" => params["To"]
            }
      end
- puts "dsfffffffffffffffffffffffffffffffffffffff" 
-    result = data.to_hash
-   
-    params["Value"] = result[:change_length_unit_response][:change_length_unit_result]
-    params
- end
+   res = data.to_hash
+   @result = res
+   @result
+  end
 #[:change_length_unit_response][:change_length_unit_result]
  
   def logoff
